@@ -33,7 +33,14 @@ BUZZWORDS = ["essentially",
              "migration",
              "CRUD",
              "helper",
-             "f' fahk sake"]
+             "f' fahk sake",
+             "default",
+             "database",
+             "cache",
+             "i don't know why"
+             "comment out",
+             "for some reason",
+             "it just so happens that"]
 
 class BuzzwordBingo < Sinatra::Application
 
