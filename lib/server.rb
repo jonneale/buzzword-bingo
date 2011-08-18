@@ -40,7 +40,7 @@ class BuzzwordBingo < Sinatra::Application
   configure do
     set :views, File.expand_path(File.join(File.dirname(__FILE__), '..', 'views'))
     Sass::Plugin.options[:template_location] = File.expand_path(File.join(File.dirname(__FILE__), '..', 'public', 'stylesheets', 'sass'))
-    Sass::Plugin.options[:css_location] = File.expand_path(File.join(File.dirname(__FILE__), '..', 'public', 'stylesheets'))
+    Sass::Plugin.options[:css_location] = File.expand_path(File.join(File.dirname(__FILE__), '..', 'tmp', 'stylesheets'))
     use Sass::Plugin::Rack
   end
 
