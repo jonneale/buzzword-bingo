@@ -22,7 +22,18 @@ BUZZWORDS = ["essentially",
              "how come",
              "what?",
              "who said that?",
-             "release"]
+             "release",
+             "ie",
+             "anayltics",
+             "post",
+             "tag",
+             "script",
+             "google",
+             "tracking pixel",
+             "migration",
+             "CRUD",
+             "helper",
+             "f' fahk sake"]
 
 class BuzzwordBingo < Sinatra::Application
 

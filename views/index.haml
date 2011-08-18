@@ -1,7 +1,19 @@
 %link(rel="stylesheet" media="all" href="/stylesheets/bingo.css")
-
+%script(src="/javascripts/jquery-1.4.2.min.js")
 
 %h1 Buzzword Bingo
 .keywords
   - words.each do |w|
-    .keyword=w
+    %a{:href => "#", :class => "keyword"}
+      = w
+    
+:javascript
+  $(document).ready(function(){
+    $('.keyword').click(function(){
+      $(this).stop().animate({
+        opacity: 0.2
+      }, "slow");
+    });
+  });
+  
+  
