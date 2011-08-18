@@ -50,7 +50,7 @@ class BuzzwordBingo < Sinatra::Application
   
   get '/stylesheets/:sheet.css' do
     content_type "text/css"
-    file = File.open(File.join(File.dirname(__FILE__), *%w[.. public stylesheets sass]))
+    file = File.open("#{File.join(File.dirname(__FILE__), *%w[.. public stylesheets sass])}#{params[:sheet]}")
     last_modified = file.mtime
     sass file.read, :sass => {:filename => file}
   end
