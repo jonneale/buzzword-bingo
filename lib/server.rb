@@ -47,5 +47,12 @@ class BuzzwordBingo < Sinatra::Application
   get '/' do
     haml :index, :locals => {:words => BUZZWORDS.sort_by{rand}.take(25)}
   end
+  
+  get '/stylesheets/:sheet.css' do
+    content-type = "text/css"
+    file = File.join(File.dirname(__FILE__), *%w[.. public stylesheets sass])
+    last_modified = file.mtime
+    sass file.read, :sass => {:filename => file}
+  end
 
 end
