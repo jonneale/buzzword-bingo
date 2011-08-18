@@ -24,7 +24,7 @@ BUZZWORDS = ["essentially",
              "who said that?",
              "release",
              "ie",
-             "anayltics",
+             "analytics",
              "post",
              "tag",
              "script",
@@ -37,10 +37,13 @@ BUZZWORDS = ["essentially",
              "default",
              "database",
              "cache",
-             "i don't know why"
+             "i don't know why",
              "comment out",
              "for some reason",
-             "it just so happens that"]
+             "it just so happens that",
+             "xml",
+             "version",
+             "i guess"]
 
 class BuzzwordBingo < Sinatra::Application
 
